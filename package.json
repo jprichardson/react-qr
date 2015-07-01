@@ -1,0 +1,38 @@
+{
+  "name": "react-qr",
+  "version": "0.0.1",
+  "description": "React QR Code Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha --compilers js:babel/register test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jprichardson/react-qr.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "qr",
+    "qrcode"
+  ],
+  "author": "JP Richardson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jprichardson/react-qr/issues"
+  },
+  "homepage": "https://github.com/jprichardson/react-qr#readme",
+  "dependencies": {
+    "qr-image": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "jsdom": "^3.1.2",
+    "mocha": "2.x",
+    "react-tools": "^0.13.3",
+    "standard": "4.x"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}
