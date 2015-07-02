@@ -2,9 +2,10 @@
   "name": "react-qr",
   "version": "0.0.1",
   "description": "React QR Code Component",
-  "main": "index.js",
+  "main": "dist.js",
   "scripts": {
-    "test": "standard && mocha --compilers js:babel/register test.js"
+    "build": "babel index.js > dist.js",
+    "test": "npm run-script build && standard && mocha --compilers js:babel/register test.js"
   },
   "repository": {
     "type": "git",
@@ -34,5 +35,10 @@
   },
   "peerDependencies": {
     "react": "*"
+  },
+  "standard": {
+    "ignore": [
+      "dist.js"
+    ]
   }
 }
